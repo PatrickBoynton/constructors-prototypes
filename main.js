@@ -36,11 +36,17 @@ function expect(target) {
 // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/
 //
 // ONLY ADD CODE TO THIS SECTION
-function Human({name, cool = false}) {
+function Human({name, cool = false} = {}) {
     this.name = name,
     this.cool = cool
 }
 
+
+function Dog({color, hungry, owner} = {}) {
+  this.color = color,
+  this.hungry = hungry,
+  this.owner = owner
+}
 //     __
 //    / /_  __  ______ ___  ____ _____  _____
 //   / __ \/ / / / __ `__ \/ __ `/ __ \/ ___/
@@ -55,6 +61,8 @@ let faith = new Human({
   name: 'Faith',
   cool: true,
 });
+
+
 
 //        __
 //   ____/ /___  ____ ______
