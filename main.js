@@ -36,8 +36,10 @@ function expect(target) {
 // \___/\____/_/ /_/____/\__/_/   \__,_/\___/\__/\____/_/  /____/
 //
 // ONLY ADD CODE TO THIS SECTION
-
-
+function Human({name, cool = false}) {
+    this.name = name,
+    this.cool = cool
+}
 
 //     __
 //    / /_  __  ______ ___  ____ _____  _____
