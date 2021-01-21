@@ -44,11 +44,11 @@ function Human({name, cool = false} = {}) {
       return oz.status
     },
     this.feed = function() {
-      
+      moonshine.hungry = false;
     }
 }
 
-function Dog({color, hungry, owner, status = "normal"} = {}) {
+function Dog({color, hungry=true, owner, status = "normal"} = {}) {
   this.color = color,
   this.hungry = hungry,
   this.owner = owner,
