@@ -38,14 +38,19 @@ function expect(target) {
 // ONLY ADD CODE TO THIS SECTION
 function Human({name, cool = false} = {}) {
     this.name = name,
-    this.cool = cool
+    this.cool = cool,
+    this.pet = function () {
+    },
+    this.feed = function() {
+
+    }
 }
 
-
-function Dog({color, hungry, owner} = {}) {
+function Dog({color, hungry, owner, status} = {}) {
   this.color = color,
   this.hungry = hungry,
-  this.owner = owner
+  this.owner = owner,
+  this.status = status
 }
 //     __
 //    / /_  __  ______ ___  ____ _____  _____
