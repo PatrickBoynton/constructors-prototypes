@@ -40,13 +40,15 @@ function Human({name, cool = false} = {}) {
     this.name = name,
     this.cool = cool,
     this.pet = function () {
+      oz.status = "happy";
+      return oz.status
     },
     this.feed = function() {
-
+      
     }
 }
 
-function Dog({color, hungry, owner, status} = {}) {
+function Dog({color, hungry, owner, status = "normal"} = {}) {
   this.color = color,
   this.hungry = hungry,
   this.owner = owner,
